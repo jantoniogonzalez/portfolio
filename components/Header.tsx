@@ -12,18 +12,18 @@ const Header = (props: Props) => {
         <motion.div
         initial={{x:-500, opacity : 0, scale: 0.5}} 
         animate={{x:0, opacity: 1, scale: 1}} 
-        transition={{type: "tween", delay: 1, duration: 1.5}} 
+        transition={{type: "tween", delay: 0.5, duration: 1.5}} 
         className='flex space-x-4 items-center'>
-            <SocialIcon className='rounded-full hover:bg-slate-100' url="https://github.com/jantoniogonzalez" fgColor='gray' bgColor='transparent'/> 
-            <SocialIcon className='rounded-full hover:bg-slate-100'url="https://www.linkedin.com/in/juan-antonio-gonzalez-gomez-12b310221/" fgColor='gray' bgColor='transparent'/>
+            <SocialIcon className='ease-in-out rounded-full hover:bg-sky-600' url="https://github.com/jantoniogonzalez" fgColor='white' bgColor='transparent'/> 
+            <SocialIcon className='ease-in-out rounded-full hover:bg-sky-600'url="https://www.linkedin.com/in/juan-antonio-gonzalez-gomez-12b310221/" fgColor='white' bgColor='transparent'/>
         </motion.div>
         <motion.div 
         initial={{x:500, opacity : 0, scale: 0.5}} 
         animate={{x:0, opacity: 1, scale: 1}}
         transition={{type: "tween", delay: 1, duration: 1.5}} 
         className='flex flex-row items-center'>
-            <SocialIcon className='rounded-full cursor-pointer hover:bg-slate-100' label='Get in touch' network='email' fgColor='gray' bgColor='transparent'/>
-            <p className='uppercase hidden md:inline-flex'>Get in touch</p>
+            <SocialIcon className='ease-in-out rounded-full cursor-pointer hover:bg-sky-600' label='Get in touch' network='email' fgColor='white' bgColor='transparent'/>
+            <p className='uppercase hidden md:inline-flex font-bold font-sans tracking-widest'>Get in touch</p>
         </motion.div>
     </header>
   )

@@ -1,32 +1,44 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 type Props = {}
 
-const rotateInterval1 = [45];
-let value = 45;
-for(let i = 0; i< 16; i++){
-    value = value + 11.25;
-    rotateInterval1.push(value);
-}
-
-const rotateInterval2 = [180];
-let value2 = 180;
-for(let i = 0; i< 16; i++){
-    value2 = value2 - 11.25;
-    rotateInterval2.push(value2);
-}
-
+// const BackgroundCircles = (props: Props) => {
+//     return (
+//       <motion.div 
+//         className='relative flex justify-center items-center'
+//         initial={{opacity: 0, scale: 4}}
+//         animate={{scale:[4,1], opacity:1}}
+//         transition={{duration: 1.5, delay: 1}}
+//       >
+//           <div
+//               className='absolute mt-52 border rounded-full border-white h-[560px] w-[560px] animate-pulse'
+//             >        
+//           </div>
+//           <div
+//               className='absolute mt-52 border rounded-full border-white h-[600px] w-[600px] animate-pulse'
+//               >        
+//           </div>
+//       </motion.div>
+//     )
+//   }
 
 const BackgroundCircles = (props: Props) => {
   return (
-    <div className='relative flex justify-center items-center'>
+    <motion.div 
+        className='relative flex justify-center items-center pt-20 z-0'
+        initial={{opacity: 0, scale: 4}}
+        animate={{scale:[4,1], opacity:1}}
+        transition={{duration: 1.5, delay: 0.5}}
+    >
         <motion.div
-            className='absolute mt-52 border rounded-lg border-yellow-200 h-[200px] w-[200px] animate-pulse'
+            className='absolute mt-52 border border-white h-[560px] w-[560px] animate-pulse'
             animate={{
-                rotate: rotateInterval1, // 157.5, 135,112.5, 90,67.5, 45
+                rotate: [0, 360], // 157.5, 135,112.5, 90,67.5, 45
             }}
             transition={{
+                delay: 2, 
                 duration: 30,
                 ease: "easeIn",
                 times: [], //0, 0.75, 1.5, 2.75, 3.5, 4.25, 5, 5.75, 6.5, 7.25, 8, 8.75, 9.5
@@ -35,12 +47,14 @@ const BackgroundCircles = (props: Props) => {
             }}
             >        
         </motion.div>
+        
         <motion.div
-            className='absolute mt-52 border rounded-lg border-red-200 h-[200px] w-[200px] animate-pulse'
+            className='absolute mt-52 border border-white h-[560px] w-[560px] animate-pulse'
             animate={{
-                rotate: rotateInterval2, // 157.5, 135,112.5, 90,67.5, 45
+                rotate: [360, 0], // 157.5, 135,112.5, 90,67.5, 45
             }}
             transition={{
+                delay: 2,
                 duration: 30,
                 ease: "easeIn",
                 times: [], //0, 0.75, 1.5, 2.75, 3.5, 4.25, 5, 5.75, 6.5, 7.25, 8, 8.75, 9.5
@@ -49,8 +63,9 @@ const BackgroundCircles = (props: Props) => {
             }}
             >        
         </motion.div>
-    </div>
+    </motion.div>
   )
 }
 
 export default BackgroundCircles
+
