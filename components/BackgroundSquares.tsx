@@ -24,7 +24,7 @@ type Props = {}
 //     )
 //   }
 
-const BackgroundCircles = (props: Props) => {
+const BackgroundSquares = (props: Props) => {
   return (
     <motion.div 
         className='relative flex justify-center items-center pt-20 z-0'
@@ -67,5 +67,5 @@ const BackgroundCircles = (props: Props) => {
   )
 }
 
-export default BackgroundCircles
+export default BackgroundSquares
 

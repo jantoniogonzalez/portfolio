@@ -1,5 +1,5 @@
 import React from 'react'
-import BackgroundCircles from './BackgroundCircles'
+import BackgroundSquares from './BackgroundSquares'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
 
   return (
     <main className='mx-auto max-w-7xl h-screen flex flex-col flex-wrap items-center justify-center text-center overflow-hidden'>
-        <BackgroundCircles/>
+        <BackgroundSquares/>
           <Image className='rounded-full' src='/profpic2.jpg' alt='Pic of Juan' height={200} width={200}/>
           <h3 className='font-thin font-sans uppercase tracking-[8px] pt-3 pb-1 text-sm'>software engineer</h3>
           <h1 className='font-extrabold font-serif text-3xl capitalize break-words'>

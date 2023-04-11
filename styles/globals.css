@@ -6,4 +6,10 @@
     .heroButton{
         @apply mx-5 py-2 font-light font-sans tracking-widest uppercase hover:cursor-pointer text-sm
     }
+    .cubes{
+        @apply border-2 border-white rounded-sm h-[50px] w-[50px] text-4xl
+    }
+    .headings{
+        @apply absolute top-24 font-[50] font-sans tracking-[6px] uppercase text-4xl mb-20
+    }
 }
