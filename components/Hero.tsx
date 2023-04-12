@@ -16,8 +16,8 @@ const Hero = (props: Props) => {
     <main className='mx-auto max-w-7xl h-screen flex flex-col flex-wrap items-center justify-center text-center overflow-hidden'>
         <BackgroundSquares/>
           <Image className='rounded-full' src='/profpic2.jpg' alt='Pic of Juan' height={200} width={200}/>
-          <h3 className='font-thin font-sans uppercase tracking-[8px] pt-3 pb-1 text-sm'>software engineer</h3>
-          <h1 className='font-extrabold font-serif text-3xl capitalize break-words'>
+          <h3 className='font-light font-sans uppercase tracking-[8px] pt-3 pb-1 text-sm'>software engineer</h3>
+          <h1 className='font-extrabold font-sans text-3xl capitalize break-words'>
             <span>{text}</span>
             <Cursor cursorColor='white'/>
           </h1>

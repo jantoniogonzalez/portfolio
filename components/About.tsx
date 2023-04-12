@@ -11,8 +11,8 @@ const About = (props: Props) => {
         <div className='flex space-x-16'>
             <div className='text-left max-w-xl'>
                 <h1 
-                className="font-extrabold font-serif text-3xl before:content-['Based_in_Vancouver,_Canada'] hover:before:content-['MADE_IN_COLOMBIA']
-               hover:text-black hover:font-sans hover:font-extrabold"></h1>
+                className="font-extrabold font-sans text-3xl before:content-['Based_in_Vancouver,_Canada'] hover:before:content-['MADE_IN_COLOMBIA']
+               hover:text-black hover:font-extrabold"></h1>
                 <p className='flex text-xl'>Born and raised in Bogota, Colombia, I am completing my undergraduate in computer science at Simon Fraser University. I love coding, but you already knew that. </p>
             </div>
             <div className=''>
